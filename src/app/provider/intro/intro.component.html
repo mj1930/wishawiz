@@ -1,0 +1,70 @@
+<div class="view full-page-intro" style="background-image: url('assets/img/bg-02.jpg'); background-repeat: no-repeat; background-size: cover; background-color: rgba(0,0,0,0.1);">
+  <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row">
+        <!--Grid column1-->
+        <div class="col-md-6 mb-4 white-text text-center text-md-left">
+          <h1 class="font-weight-bold mt-5">Expand your service business with WishaWiz</h1>
+          <hr class="hr-light">
+          <h5>Join a community of 65,000+ professionals who have successfully grown their business with WishaWiz.</h5>
+         <div class="row mt-5 d-none d-lg-flex">
+          <div class="col-lg-4 col-md-4">
+            <h3>3.0 Million +</h3>
+            <p>Verified Customers</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h3>100,000 +</h3>
+            <p>Professionals earning on our platform</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h3>100 +</h3>
+            <p>Services across various categories</p>
+          </div>
+         </div>
+          <a target="_blank" href="" class="btn md-btn-outline-white btn-lg">Click to Know More
+            <i class="fa fa-graduation-cap ml-2"></i>
+          </a>
+        </div>
+        <!--grid column1 end-->
+        <!--Grid column2-->
+        <div class="col-md-6 col-xl-5 mb-4 mt-5 ">
+          <div class="card">
+            <div class="card-body">
+              <form [formGroup]="MobileVarification" >
+                <h4 class="dark-grey-text text-center">
+                  <strong>Become an WishaWiz Partner within minutes</strong>
+                </h4>
+                <hr>
+                <div >
+          
+                  <mat-form-field style="width: 100%" >
+                    <mat-select placeholder="Country" formControlName="dialCode" [(value)]="dialCode" >
+                      <mat-option *ngFor="let country of Countries" [value]="country.dialCode">
+                        {{country.country}}
+                      </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                 </div>
+                <div >
+                  <mat-form-field style="width: 100%;">
+                    <span matPrefix>{{dialCode}} &nbsp;</span>
+                    <input type="tel" matInput placeholder="Enter Mobile No." formControlName="mobile">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn md-btn-outline-danger btn-md" (click)="onSubmitMobile()" >Next</button>
+                  <hr>
+                  <p> <a href="">Know how </a>WishaWiz works</p>
+                 </div> 
+                  
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--Grid column2 end-->
+      </div>
+    </div>
+   </div>
+  </div>
+<!-- Intro end-->

@@ -1,0 +1,69 @@
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url(/assets/img/bg-masthead.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  
+  header.masthead h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    z-index: 4;
+    position: relative;
+    font-family: Axiforma-SemiBold,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    text-shadow: 0 1px 8px rgba(0,0,0,.2);
+  }
+  header.masthead h5 {
+    font-weight: 500;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    z-index: 4;
+    position: relative;
+    text-shadow: 0 1px 8px rgba(0,0,0,.4);
+    font-size: 21px;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+    color: #101010;  
+    font-size: 47px;
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    z-index: 4;
+    position: relative;
+    font-family: Axiforma-SemiBold,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    text-shadow: 0 1px 8px rgba(0,0,0,.2);
+    }
+  }
+
+  .search{
+    background-color: #fff;
+    color: #101010;
+  }
+  button{
+    background-color: #fff;
+    color: #101010;
+  }

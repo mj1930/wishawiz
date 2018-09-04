@@ -1,0 +1,47 @@
+<div mdbModal #signupForm="mdb-modal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <div class="modal-content">
+                       <div class="modal-body">
+                            <div class="box">
+                                 <div class="content">
+                                     <h3 class="text-center"><strong>SignUp With</strong> </h3>
+                                    <div class="social">
+                                        <a class="circle github" href="#">
+                                            <i class="fa fa-github fa-fw"></i>
+                                        </a>
+                                        <a id="google_login" class="circle google" href="#">
+                                            <i class="fa fa-google-plus fa-fw"></i>
+                                        </a>
+                                        <a id="facebook_login" class="circle facebook" href="#">
+                                            <i class="fa fa-facebook fa-fw"></i>
+                                        </a>
+                                    </div>
+                                    <div class="division">
+                                        <div class="line l"></div>
+                                          <span>or</span>
+                                        <div class="line r"></div>
+                                    </div>
+                                    <div class="error"></div>
+                                    <div class="form loginBox">
+                                            <form  [formGroup]="signUpForm" (ngSubmit)="onSubmit()" >
+                                                    <input  class="form-control" type="text" placeholder="First Name" formControlName="first_name" >
+                                                    <input  class="form-control" type="text" placeholder="Last Name" formControlName="last_name" > 
+                                                    <input  class="form-control" type="text" placeholder="Email" formControlName="email" >
+                                                    <input  class="form-control" type="password" placeholder="Password"  formControlName="password" >
+                                                    <button class="btn btn-default btn-login" type="submit"  >Submit</button>
+    
+                                           </form>
+                                    </div>
+                                 </div>
+                            </div>
+        
+                        </div>
+                        <div class="modal-footer">
+                            <div class="forgot register-footer" style="display:none">
+                                    <span>Already have an account?</span>
+                                    <a href="">Login</a>
+                            </div>
+                        </div>
+              </div>
+         </div>
+    </div>

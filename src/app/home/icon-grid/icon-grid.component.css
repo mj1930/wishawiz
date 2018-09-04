@@ -1,0 +1,20 @@
+.features-icons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .features-icons .features-icons-item {
+    max-width: 200px;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 100px;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 60px;
+  }
+  
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 50px;
+  }

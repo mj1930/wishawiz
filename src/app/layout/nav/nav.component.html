@@ -1,0 +1,36 @@
+
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" [containerInside]="true">
+  <logo>
+    <a class="logo navbar-brand" routerLink="/">
+      <strong>WishaWiz</strong>
+    </a>
+  </logo>
+  <links>
+    <ul class="navbar-nav mr-auto">
+      <!-- <li class="nav-item active waves-light">
+        <a class="nav-link">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect>
+        <a class="nav-link">Link</a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect>
+        <a class="nav-link">Profile</a>
+      </li> -->
+    </ul>
+    <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link" routerLink="/provider" >Become Partner</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link" (click)="showLoginModal()">login</a>
+            </li>
+
+        <!-- <li class="nav-item active waves-light">
+            <button type="button" class="btn btn-primary waves-light" (click)="showLoginModal()" >Login form</button>
+        </li> -->
+     
+      </ul>
+  </links>
+</mdb-navbar>
